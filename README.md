@@ -1,3 +1,29 @@
+## ⚠️ Deprecation Notice
+> [!WARNING]
+> The `serverless-python-requirements` plugin has been **deprecated** and is no longer maintained as a standalone package.  
+>
+> Its functionality is now **fully integrated into [Serverless Framework v4.22.0+](https://github.com/serverless/serverless/releases/tag/v4.22.0)**, including:
+> - Built-in support for **[uv](https://github.com/astral-sh/uv)** project management  
+> - All dependencies upgraded to their **latest secure and maintained versions**  
+> - Full **backward compatibility** with existing configurations  
+> - Covered under the same **SLA and maintenance policy** as the Serverless Framework itself  
+>
+> The repository has been **archived** and remains available for reference only.  
+> **No further updates or releases will be published.**
+>
+> ### Migration instructions
+> - Remove `serverless-python-requirements` from your `plugins` list in `serverless.yml`
+> - Remove it from your `package.json` dependencies
+> - The built-in integration in Serverless Framework now **activates automatically** when a `custom.pythonRequirements` block is present in your config  
+>
+> ### Documentation and support
+> 📘 Refer to the official Serverless Framework documentation for details on Python packaging:  
+> [Serverless Framework – Python packaging guide](https://www.serverless.com/framework/docs/providers/aws/guide/python)
+>
+> 💬 For any future **issues or feature requests**, please use the main [Serverless Framework repository](https://github.com/serverless/serverless).
+>
+> Thank you to all contributors and users for your support and feedback! 💪
+
 # Serverless Python Requirements
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
